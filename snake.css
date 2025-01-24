@@ -35,7 +35,7 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  margin-right: 20px; /* Space between buttons and canvas */
+  margin-right: 20px; 
 }
 
 button {
@@ -62,8 +62,6 @@ button:hover {
   border: 1px solid white;
   background-color: #000;
 }
-
-/* Modal styles */
 .modal {
   display: none;
   position: fixed;
