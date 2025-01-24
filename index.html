@@ -9,34 +9,29 @@
 <body>
   <h1>Snake Game</h1>
 
-  <!-- Display scores -->
   <div id="score-display">
     <p>Score: <span id="current-score">0</span></p>
     <p>Highest Score: <span id="highest-score">0</span></p>
   </div>
 
-  <!-- Main container -->
+
   <div id="main-container">
-    <!-- Button container for Pause, Leaderboard, and Restart buttons -->
     <div id="button-container">
       <button id="pause-btn">Pause Game</button>
-      <button id="leaderboard-btn">Leaderboard</button>
+    
       <button id="restart-btn" style="display: none;">Restart Game</button>
     </div>
 
-    <!-- Game container with canvas -->
     <div id="game-container">
       <canvas id="game-board"></canvas>
     </div>
   </div>
 
-  <!-- Pop-up modal for starting the game -->
   <div id="start-modal" class="modal">
     <div class="modal-content">
       <h2>Welcome to Snake Game!</h2>
       <p>Enter your name and press "Start" to begin:</p>
       
-      <!-- Input field for user's name -->
       <input type="text" id="username" placeholder="Enter your name" />
       <button id="start-btn">Start Game</button>
 
@@ -46,7 +41,6 @@
     </div>
   </div>
 
-  <!-- Leaderboard Modal -->
   <div id="leaderboard-modal" class="modal">
     <div class="modal-content">
       <h2>Leaderboard</h2>
