@@ -1,4 +1,4 @@
-# High-End Snake Game
+# Snake Game
 
 Welcome to the **High-End Snake Game**! This is a modern and visually enhanced version of the classic Snake game, complete with a pause functionality, and user-specific high scores.
 
