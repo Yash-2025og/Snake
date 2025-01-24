@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <h1>Snake Game</h1>
+
+  <!-- Display scores -->
+  <div id="score-display">
+    <p>Score: <span id="current-score">0</span></p>
+    <p>Highest Score: <span id="highest-score">0</span></p>
+  </div>
+
+  <!-- Main container -->
+  <div id="main-container">
+    <!-- Button container for Pause, Leaderboard, and Restart buttons -->
+    <div id="button-container">
+      <button id="pause-btn">Pause Game</button>
+      <button id="leaderboard-btn">Leaderboard</button>
+      <button id="restart-btn" style="display: none;">Restart Game</button>
+    </div>
+
+    <!-- Game container with canvas -->
+    <div id="game-container">
+      <canvas id="game-board"></canvas>
+    </div>
+  </div>
+
+  <!-- Pop-up modal for starting the game -->
+  <div id="start-modal" class="modal">
+    <div class="modal-content">
+      <h2>Welcome to Snake Game!</h2>
+      <p>Enter your name and press "Start" to begin:</p>
+      
+      <!-- Input field for user's name -->
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button id="start-btn">Start Game</button>
+
+      <div id="user-info" style="display: none;">
+        <p>Welcome back, <span id="user-name-display"></span>!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaderboard Modal -->
+  <div id="leaderboard-modal" class="modal">
+    <div class="modal-content">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard-list"></ul>
+      <button id="close-leaderboard-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>
